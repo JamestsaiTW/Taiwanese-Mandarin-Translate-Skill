@@ -43,11 +43,14 @@ Here, `~` is the Unix-style home directory shorthand. On each platform, it resol
 ## Highlights
 
 - Uses Taiwan-preferred terminology for software, UI, and technical documentation
-- Detects and rewrites China-leaning wording into natural Taiwan usage
+- Cross-domain Taiwan wording: daily life, food, medical, finance, legal, e-commerce, education, geography, and online culture
+- Keeps Taiwan's Japanese / Taiwanese heritage loanwords (e.g. 便當, 瓦斯, 料理) instead of normalizing them into China-style descriptions
+- Detects and rewrites China-leaning wording, including non-Simplified cross-strait divergences (視頻→影片, 項目→專案, B超→超音波)
 - Defaults to Taiwanese Mandarin, while supporting a more neutral ROC Mandarin register for formal Taiwan contexts
 - Aims for wording that is broadly understandable across Taiwan
 - Follows a clear workflow: understand -> translate -> proofread -> polish
 - Preserves Markdown, placeholders, code, commands, and the original structure
+- Ships a sourced terminology library (credits taiwan.md/terminology, rajatim/zhtw MIT, and MOE dictionaries)
 
 ## Standard skill structure
 
@@ -59,6 +62,8 @@ The standard file layout for this skill is:
   EXAMPLES.md
   BENCHMARK.md
   references/vocabulary.md
+  references/terminology.md
+  references/heritage-loanwords.md
 ```
 
 This structure works directly with tools that support project-level `.agents/skills`, and the installer copies the same files into each tool's user-level skill directory.
@@ -124,7 +129,9 @@ Use this skill when you need to:
 - `.agents/skills/taiwanese-mandarin-translate/SKILL.md`: main skill definition
 - `.agents/skills/taiwanese-mandarin-translate/EXAMPLES.md`: sentence-level examples
 - `.agents/skills/taiwanese-mandarin-translate/BENCHMARK.md`: representative cases for translation quality checks
-- `.agents/skills/taiwanese-mandarin-translate/references/vocabulary.md`: categorized Taiwan terminology reference
+- `.agents/skills/taiwanese-mandarin-translate/references/vocabulary.md`: software/UI Taiwan terminology reference
+- `.agents/skills/taiwanese-mandarin-translate/references/terminology.md`: cross-domain Taiwan terminology (daily life, food, medical, finance, legal, e-commerce, education, geography, online culture)
+- `.agents/skills/taiwanese-mandarin-translate/references/heritage-loanwords.md`: Japanese / Taiwanese heritage loanwords to keep
 - `scripts/install-skill.mjs`: cross-platform installer
 - `package.json`: CLI entry points and npm scripts
 

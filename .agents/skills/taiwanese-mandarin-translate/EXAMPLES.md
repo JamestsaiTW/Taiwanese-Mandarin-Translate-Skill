@@ -75,3 +75,26 @@ These examples show the default style this skill should aim for.
 | Click **Copy link** to share this report. | 點選 **複製連結** 即可分享這份報表。 |
 | Do not translate `user_id`, `{workspace}`, or https://example.com. | 請勿翻譯 `user_id`、`{workspace}` 或 https://example.com。 |
 | Use `--target copilot` to install the skill for GitHub Copilot. | 使用 `--target copilot` 即可為 GitHub Copilot 安裝這個 skill。 |
+
+## Cross-domain everyday wording
+
+| Domain | Source | Preferred translation | Note |
+| --- | --- | --- | --- |
+| daily life | I was stuck in a traffic jam, so I took a taxi to the MRT. | 我塞車塞到不行，後來改搭計程車去捷運站。 | `塞車`/`計程車`/`捷運`，非 `堵車`/`出租車`/`地鐵`。 |
+| food | Add a potato and some tomatoes to the soup. | 在湯裡加一顆馬鈴薯和一些番茄。 | `馬鈴薯`/`番茄`，非 `土豆`/`西紅柿`；台灣「土豆」＝花生。 |
+| medical | The doctor scheduled an ultrasound and a follow-up at the clinic. | 醫師安排了超音波，並要我回診追蹤。 | `超音波`，非 `B超`。 |
+| finance | Transfer the money from your account using mobile payment. | 用行動支付從你的帳戶轉帳。 | `行動支付`/`帳戶`/`轉帳`，非 `移動支付`/`賬戶`/`轉賬`。 |
+| legal | Sign the contract and bring your ID card. | 簽好合約，並帶你的身分證。 | `合約`/`身分證`，非 `合同`/`身份證`。 |
+| e-commerce | Free shipping with convenience-store pickup at checkout. | 結帳時可選免運的超商取貨。 | `免運`/`超商取貨`/`結帳`，非 `包郵`/`自提`/`去支付`。 |
+| education | She is an undergraduate majoring in computer science. | 她是資訊工程系的大學部學生。 | `大學部`/`科系`，非 `本科`/`專業`。 |
+| online culture | The OP posted a meme, and netizens kept replying. | 原PO 發了一張梗圖，網友一直回覆。 | `原PO`/`梗圖`/`網友`，非 `樓主`/`表情包`/`網民`。 |
+
+## Keeping Taiwan heritage loanwords
+
+| Source / China-leaning | Preferred (keep heritage term) | Note |
+| --- | --- | --- |
+| 我買了一個盒飯當午餐。 | 我買了一個便當當午餐。 | 保留日語借詞 `便當`，勿用 `盒飯`。 |
+| 廚房的煤氣爐壞了。 | 廚房的瓦斯爐壞了。 | 保留 `瓦斯`，勿用 `煤氣`。 |
+| 這家日本菜很好吃。 | 這家日本料理很好吃。 | 台灣慣用 `料理`。 |
+| 他做事很爽快。 | 他做事很阿莎力。 | 口語/在地語感場合保留台語借詞 `阿莎力`。 |
+| 這批貨的質量很好。 | 這批貨的品質很好。 | 台灣 `品質`＝quality；`質量`＝物理 mass。 |

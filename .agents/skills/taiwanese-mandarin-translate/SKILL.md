@@ -45,8 +45,8 @@ A widely used definition frames ROC Mandarin as a Taiwan-wide standard variety o
 Follow this order when choosing wording:
 
 1. Use the product's existing glossary, UI wording, or domain terminology if the project already has one.
-2. Otherwise use common Taiwan terminology and Taiwan software/UI conventions.
-3. If the source contains Simplified Chinese or China-specific wording, normalize it into Taiwan usage instead of translating it literally.
+2. Otherwise use common Taiwan terminology and conventions for the relevant domain — software/UI, everyday life, food, medical, finance, legal, e-commerce, education, geography, or online culture. See `references/terminology.md` and `references/heritage-loanwords.md`.
+3. If the source contains Simplified Chinese or China-specific wording, normalize it into Taiwan usage instead of translating it literally. This includes cross-strait divergences that are not Simplified characters (e.g. 視頻→影片, 項目→專案, B超→超音波).
 4. If the text is formal or public-facing, prefer wording that also fits Taiwan's neutral standard written register.
 5. Keep brands, product names, APIs, code, commands, file paths, and technical identifiers in the source language unless the user asks otherwise.
 
@@ -54,6 +54,8 @@ Follow this order when choosing wording:
 
 - Translate into **Traditional Chinese used in Taiwan**, with **Taiwanese Mandarin** as the default voice.
 - Avoid Simplified Chinese characters and China-specific phrasing.
+- **Actively detect and rewrite cross-strait divergent wording**, not just Simplified characters. 主動偵測並改寫兩岸分歧詞，例如：項目→專案／計畫、視頻→影片、教程→教學、堵車→塞車、渠道→管道、小區→社區、獼猴桃→奇異果、土豆（馬鈴薯義）→馬鈴薯、本科→大學部、刷題→寫題目、B超→超音波。These differ even when both sides write Traditional or Simplified characters. See `references/terminology.md` for the cross-domain list.
+- **Keep Taiwan's established Japanese / Taiwanese (台語) loanwords; do not normalize them into China-style descriptive wording.** 保留台灣慣用的日語／台語 heritage 借詞，例如「便當」（勿改成「盒飯」）、「瓦斯」（勿改成「煤氣」），以及「料理」「阿莎力」「運將」。改寫只朝「中國用語 → 台灣 heritage 詞」方向進行，不可反向。See `references/heritage-loanwords.md`.
 - Prefer concise, idiomatic sentences over word-for-word translation.
 - For official, educational, public-service, or cross-audience content, shift slightly toward a **neutral ROC Mandarin** written register without losing natural Taiwan usage.
 - Use **full-width punctuation** in normal prose. Keep half-width punctuation inside code, commands, URLs, placeholders, and file paths.
@@ -96,7 +98,7 @@ Use these patterns by default for product copy and technical documentation:
 | settings | 設定 |
 | sidebar / dashboard | 側邊欄 / 控制台 |
 
-See `references/vocabulary.md` for a larger categorized reference, `EXAMPLES.md` for sentence-level examples, and `BENCHMARK.md` for quality spot-check cases.
+See `references/vocabulary.md` for the software/UI glossary, `references/terminology.md` for cross-domain Taiwan wording (daily life, food, medical, finance, legal, e-commerce, education, geography, online culture), and `references/heritage-loanwords.md` for Japanese / Taiwanese heritage loanwords to keep. See `EXAMPLES.md` for sentence-level examples and `BENCHMARK.md` for quality spot-check cases.
 
 ## Register selection
 
@@ -137,6 +139,8 @@ Check for:
 - broken placeholders, Markdown, or formatting
 - translated code identifiers, commands, URLs, file paths, or placeholders
 - inflated wording such as unnecessary `進行`, `操作`, `通過`, or `對...進行`
+- culturally Taiwan-specific terms accidentally flattened into China-style descriptions, especially food, utilities, local administration, and colloquial speech (e.g. `便當`, `瓦斯`, `料理` over-normalized)
+- cross-strait divergent wording outside software, such as food, medical, finance, legal, education, and online-culture terms
 
 ### 4. Polish
 
@@ -150,12 +154,20 @@ When the content falls into one of these areas, actively watch for common wordin
 
 | Domain | High-risk wording to catch |
 | --- | --- |
-| software / engineering | 數據、代碼、接口、配置、組件、運行、優化 |
-| UI / product copy | 點擊、鏈接、默認、激活、下載安裝 |
-| general business writing | 信息、通過、獲取、支持 |
-| daily-life examples | 視頻、西紅柿、土豆、地鐵、出租車 |
+| software / engineering | 數據、代碼、接口、配置、組件、運行、優化、內存、硬盤、項目（專案義）、教程 |
+| UI / product copy | 點擊、鏈接、默認、激活、下載安裝、截屏、視頻 |
+| general business writing | 信息、通過、獲取、支持、質量（品質義） |
+| daily life | 視頻、西紅柿、土豆（馬鈴薯義）、地鐵、出租車、堵車、渠道、小區、塑料 |
+| food / dining | 獼猴桃、菠蘿、破壁機、硬菜、盒飯、外賣、堂食、打包 |
+| medical | B超、彩超、康復、藥店、體檢、驗血、醫保 |
+| finance | 取款、轉賬、賬戶、移動支付、工資、充值、借記卡 |
+| legal / government | 合同、身份證、戶口、法律援助、知識產權、個人信息 |
+| education | 績點、刷題、初中、班主任、本科、專業（科系義）、網課、高考 |
+| forums / online culture | 樓主、帖子、私信、表情包、截屏、刷屏、拉黑、網民 |
+| heritage loanwords (keep, don't normalize) | 便當、瓦斯、料理、品質、阿莎力、運將（保留，勿改成中國描述詞） |
 
-Rewrite them into natural Taiwan usage when appropriate.
+Rewrite the China-leaning rows into natural Taiwan usage when appropriate. The
+last row is a **keep** row: those terms should be preserved, not changed.
 
 ## Avoid translated-sounding sentence patterns
 
