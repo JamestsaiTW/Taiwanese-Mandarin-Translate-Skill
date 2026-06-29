@@ -43,11 +43,14 @@
 ## 重點特色
 
 - 採用台灣偏好的軟體、UI 與技術文件用語
-- 能辨識並改寫偏中國用法的措辭，調整成台灣常用說法
+- 跨領域台灣用語：涵蓋日常、飲食、醫療、金融、法律、電商、教育、地理、網路文化
+- 保留台灣慣用的日語／台語 heritage 借詞（如便當、瓦斯、料理），不正規化成中國描述性詞
+- 能辨識並改寫偏中國用法的措辭，包含非簡體的兩岸分歧詞（視頻→影片、項目→專案、B超→超音波）
 - 以台灣華語為預設風格，並可在台灣正式情境中切換到較中性的中華民國國語書面語氣
 - 用詞在全台灣都容易理解，適合作為共享的公共語體
-- 提供清楚的流程：理解 -> 翻譯 -> 校對 -> 潤飾
+- 提供清楚的流程:理解 -> 翻譯 -> 校對 -> 潤飾
 - 保留 Markdown、佔位符、程式碼、指令與原有結構
+- 附帶具出處的詞彙庫（參考 https://taiwan.md/terminology/、rajatim/zhtw（MIT 授權）、教育部辭典）
 
 ## 標準 skill 結構
 
@@ -59,6 +62,8 @@
   EXAMPLES.md
   BENCHMARK.md
   references/vocabulary.md
+  references/terminology.md
+  references/heritage-loanwords.md
 ```
 
 這個結構可直接用於支援專案層級 `.agents/skills` 的工具，而安裝程式也會把相同檔案複製到各工具的使用者層級 skill 目錄。
@@ -124,7 +129,9 @@ node scripts/install-skill.mjs --uninstall --target all
 - `.agents/skills/taiwanese-mandarin-translate/SKILL.md`：主要的 skill 定義
 - `.agents/skills/taiwanese-mandarin-translate/EXAMPLES.md`：句子層級的範例
 - `.agents/skills/taiwanese-mandarin-translate/BENCHMARK.md`：翻譯品質檢查用的代表性案例
-- `.agents/skills/taiwanese-mandarin-translate/references/vocabulary.md`：分類整理的台灣用語參考
+- `.agents/skills/taiwanese-mandarin-translate/references/vocabulary.md`：軟體/UI 台灣用語參考
+- `.agents/skills/taiwanese-mandarin-translate/references/terminology.md`：跨領域台灣用語(日常、飲食、醫療、金融、法律、電商、教育、地理、網路文化)
+- `.agents/skills/taiwanese-mandarin-translate/references/heritage-loanwords.md`：應保留的日語/台語 heritage 借詞
 - `scripts/install-skill.mjs`：跨平台安裝程式
 - `package.json`：CLI 入口與 npm scripts
 

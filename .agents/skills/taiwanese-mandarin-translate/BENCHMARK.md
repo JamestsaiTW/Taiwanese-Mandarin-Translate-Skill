@@ -48,10 +48,24 @@ For each case, translate or rewrite the source, then compare the result with the
 | MD-2 | - Upload a file<br>- Review the error<br>- Try again | - 上傳檔案<br>- 檢查錯誤<br>- 再試一次 | Preserves list structure; natural UI verbs. |
 | MD-3 | Do not translate `user_id`, `{workspace}`, or https://example.com. | 請勿翻譯 `user_id`、`{workspace}` 或 https://example.com。 | Preserves identifier, placeholder, and URL. |
 
+## Cross-domain and heritage wording
+
+| Case | Source | Sample output | Expected qualities |
+| --- | --- | --- | --- |
+| DOM-1 | The clinic offers an ultrasound and rehab after surgery. | 這家診所提供超音波和術後復健。 | `超音波`/`復健`，非 `B超`/`康復`。 |
+| DOM-2 | Pay the mortgage from your account by mobile payment. | 用行動支付從你的帳戶繳房貸。 | `行動支付`/`帳戶`/`房貸`，非 `移動支付`/`賬戶`/`住房貸款`。 |
+| DOM-3 | Read the contract before showing your ID card. | 出示身分證前，請先看過合約。 | `合約`/`身分證`，非 `合同`/`身份證`。 |
+| DOM-4 | Free shipping with store pickup at checkout. | 結帳時可選免運的超商取貨。 | `免運`/`超商取貨`/`結帳`，非 `包郵`/`自提`。 |
+| HER-1 | 我中午買了一個盒飯。 | 我中午買了一個便當。 | 保留日語借詞 `便當`，勿改 `盒飯`。 |
+| HER-2 | 廚房的煤氣爐要修。 | 廚房的瓦斯爐要修。 | 保留 `瓦斯`，勿改 `煤氣`。 |
+| HER-3 | 這批貨的質量不錯。 | 這批貨的品質不錯。 | `品質`＝quality；勿與物理 `質量` 混用。 |
+
 ## Common failure checks
 
 - No Simplified Chinese characters remain unless quoted from the source for review.
 - No PRC-leaning software terms remain when Taiwan usage is available.
+- Cross-strait divergences outside software are caught (e.g. `視頻`, `項目`, `B超`, `合同`, `本科`, `樓主`).
+- Taiwan heritage loanwords are preserved, not flattened into China-style descriptions (e.g. `便當`, `瓦斯`, `料理`, `阿莎力`).
 - The output is not inflated with unnecessary `進行`, `操作`, `通過...來`, or `對...進行`.
 - Formal register stays clear and neutral; it should not become archaic, bureaucratic, or unnatural.
 - Markdown, placeholders, commands, file paths, URLs, and technical identifiers remain intact.
