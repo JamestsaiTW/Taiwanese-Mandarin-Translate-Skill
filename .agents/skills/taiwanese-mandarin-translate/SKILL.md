@@ -166,8 +166,7 @@ When the content falls into one of these areas, actively watch for common wordin
 | forums / online culture | 樓主、帖子、私信、表情包、截屏、刷屏、拉黑、網民 |
 | heritage loanwords (keep, don't normalize) | 便當、瓦斯、料理、品質、阿莎力、運將（保留，勿改成中國描述詞） |
 
-Rewrite the China-leaning rows into natural Taiwan usage when appropriate. The
-last row is a **keep** row: those terms should be preserved, not changed.
+Rewrite the China-leaning rows into natural Taiwan usage when appropriate. The last row is a **keep** row: those terms should be preserved, not changed.
 
 ## Avoid translated-sounding sentence patterns
 
