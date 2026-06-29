@@ -54,8 +54,8 @@ Follow this order when choosing wording:
 
 - Translate into **Traditional Chinese used in Taiwan**, with **Taiwanese Mandarin** as the default voice.
 - Avoid Simplified Chinese characters and China-specific phrasing.
-- **Actively detect and rewrite cross-strait divergent wording**, not just Simplified characters. 主動偵測並改寫兩岸分歧詞，例如：項目→專案／計畫、視頻→影片、教程→教學、堵車→塞車、渠道→管道、小區→社區、獼猴桃→奇異果、土豆（馬鈴薯義）→馬鈴薯、本科→大學部、刷題→寫題目、B超→超音波。These differ even when both sides write Traditional or Simplified characters. See `references/terminology.md` for the cross-domain list.
-- **Keep Taiwan's established Japanese / Taiwanese (台語) loanwords; do not normalize them into China-style descriptive wording.** 保留台灣慣用的日語／台語 heritage 借詞，例如「便當」（勿改成「盒飯」）、「瓦斯」（勿改成「煤氣」），以及「料理」「阿莎力」「運將」。改寫只朝「中國用語 → 台灣 heritage 詞」方向進行，不可反向。See `references/heritage-loanwords.md`.
+- **Actively detect and rewrite cross-strait divergent wording**, not just Simplified characters. 主動偵測並改寫兩岸分歧詞，例如：項目→專案／計畫、視頻→影片、教程→教學、堵車→塞車、渠道→管道、小區→社區、獼猴桃→奇異果、土豆（馬鈴薯義）→馬鈴薯、本科→大學部、刷題→寫題目、B超→超音波。 These differ even when both sides write Traditional or Simplified characters. See `references/terminology.md` for the cross-domain list.
+- **Keep Taiwan's established Japanese / Taiwanese (台語) loanwords; do not normalize them into China-style descriptive wording.** 保留台灣慣用的日語／台語 heritage 借詞，例如「便當」（勿改成「盒飯」）、「瓦斯」（勿改成「煤氣」），以及「料理」「阿莎力」「運將」。改寫只朝「中國用語 → 台灣 heritage 詞」方向進行，不可反向。 See `references/heritage-loanwords.md`.
 - Prefer concise, idiomatic sentences over word-for-word translation.
 - For official, educational, public-service, or cross-audience content, shift slightly toward a **neutral ROC Mandarin** written register without losing natural Taiwan usage.
 - Use **full-width punctuation** in normal prose. Keep half-width punctuation inside code, commands, URLs, placeholders, and file paths.
