@@ -50,6 +50,8 @@ Some English terms should not be mapped to a single Chinese word without context
 | deploy / deployment | 部署 | Standard Taiwan software term. |
 | sync | 同步 | Avoid `同步化` unless the project uses it. |
 | plan | 方案 / 計畫 / plan | Use `方案` for pricing/product tiers, `計畫` for schedules or initiatives, and keep `plan` if it is a product label. |
+| stack | 堆疊 / 技術堆疊 / stack | For the data structure, use `堆疊`. For "tech stack / technology stack", use `技術堆疊`, or keep `tech stack` in casual developer writing. Avoid `棧` and `技術棧` (PRC usage). |
+| tech stack / technology stack | 技術堆疊 / tech stack | Prefer `技術堆疊`; keeping the English `tech stack` is also natural in Taiwan developer contexts. Do not use `技術棧`. |
 
 ## Action verbs for UI and documentation
 
@@ -100,6 +102,8 @@ Some English terms should not be mapped to a single Chinese word without context
 | 優化 | 最佳化 |
 | 獲取 | 取得 |
 | 通過 | 透過 |
+| 棧 | 堆疊 |
+| 技術棧 | 技術堆疊 |
 
 ## Sentence patterns to avoid
 
