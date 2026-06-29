@@ -50,7 +50,7 @@ Here, `~` is the Unix-style home directory shorthand. On each platform, it resol
 - Aims for wording that is broadly understandable across Taiwan
 - Follows a clear workflow: understand -> translate -> proofread -> polish
 - Preserves Markdown, placeholders, code, commands, and the original structure
-- Ships a sourced terminology library (credits taiwan.md/terminology, rajatim/zhtw (MIT), and MOE dictionaries)
+- Ships a sourced terminology library (credits https://taiwan.md/terminology/, rajatim/zhtw (MIT), and MOE dictionaries)
 
 ## Standard skill structure
 

@@ -50,7 +50,7 @@
 - 用詞在全台灣都容易理解，適合作為共享的公共語體
 - 提供清楚的流程:理解 -> 翻譯 -> 校對 -> 潤飾
 - 保留 Markdown、佔位符、程式碼、指令與原有結構
-- 附帶具出處的詞彙庫（參考 taiwan.md/terminology、rajatim/zhtw（MIT 授權）、教育部辭典）
+- 附帶具出處的詞彙庫（參考 https://taiwan.md/terminology/、rajatim/zhtw（MIT 授權）、教育部辭典）
 
 ## 標準 skill 結構
 
